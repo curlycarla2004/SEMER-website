@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Présentation | Service Educatif et Mission d'Encadrement Renforcé{% endblock %}
+{% block description %}Le <b>Service Educatif et Mission d'Encadrement Renforcé</b> a pour vocation d’accueillir des jeunes adolescent(e)s pour lesquels un accompagnement 
+différent d’une prise en charge traditionnelle s’impose. {% endblock %}
+
+{% block body %}
+<!-- Presentation background image-->
+<div id="parallax1" style="background-image:url('{{ asset('images/presentation.webp') }}')">
+</div>
+
+<!-- Presentation Title-->
+ <section id="hero" class="section">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12">
+                   <div class="herotext text-center">
+                        <h1 class="title-section"><b>PRÉSENTATION DU SERVICE ÉDUCATIF</b></h1>
+                   </div>
+              </div>
+              
+         </div>
+    </div>
+</section>    
+
+<section class="parallax section" style="background-color: white;">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12 sol-sm-12">
+                   <div class="maintitle">
+                        <p class="lead ">
+                            Le <b>Service Educatif et Mission d'Encadrement Renforcé</b> a pour vocation d’accueillir des jeunes adolescent(e)s pour lesquels un accompagnement 
+                            différent d’une prise en charge traditionnelle s’impose.
+                            <br><br>
+                            Les bénéficiaires de nos actions sont logés en appartement et bénéficient de la présence permanente d’un éducateur, ainsi que d’un accompagnement 
+                            individualisé qui se construit avec eux en prenant en compte leur profil et leur âge. Des activités collectives avec tous les bénéficiaires 
+                            de notre accompagnement ont lieu chaque semaine.
+                            <br><br>
+                            Un bilan hebdomadaire de fin de semaine est sans cesse établi avec chaque adolescent(e) pour qu’il puisse porter un regard critique sur 
+                            sa situation, son évolution ainsi que sur son investissement personnel, mais également exprimer ses attentes.
+                            <br><br>
+                            Une synthèse mensuelle reprenant les avancées et les axes d’amélioration inhérents à chaque profil est rédigé chaque fin de mois. 
+                            Cette synthèse mensuelle de placement permet de prendre en compte l’évolution des bénéficiaires dans son ensemble et d’adapter 
+                            l’accompagnement prodigué à ses besoins.
+                            <br><br>
+                        </p>
+                        <div class="container container-alignment">
+                            <img src="{{ asset('images/kayak.webp') }}" alt="kayak image" class="responsive-images" >  
+                        </div>
+                        <br><br>
+                        <p class="lead ">
+                            L’organisation collective que nous avons mise en place est au service du projet personnalisé qui permet d’adapter l’offre globale 
+                            de prestations aux besoins et attentes de chacun en prenant en compte l’adolescent « tel qu’il est ». Le projet personnalisé est 
+                            un vecteur essentiel pour aider le jeune à se construire ou à se reconstruire à partir de bilans partagés réalisés à chacune des 
+                            étapes de la prise en charge. La réévaluation régulière du projet personnalisé permet d’être au plus près des besoins et attentes 
+                            des adolescents afin de les accompagner au mieux vers l’autonomie. 
+                            <br><br>
+                            Comme le préconise la loi de 2002-2 et les recommandations de bonnes pratiques professionnelles, tout sera mis en œuvre pour 
+                            que le jeune puisse comprendre sa situation, et exprimer ses attentes, dans le cadre du projet mais aussi dans le cadre général de la prise en charge.
+                            <br><br>
+                            Nous portons une attention toute particulière aux documents écrits qui nous permettent de suivre la progression de l’adolescent, à partir des 
+                            évaluations d’étapes conduisant à des ajustements, voire dans certains cas à une reprise partielle du projet personnalisé.
+                            <br><br>
+                            Le projet personnalisé soutient la logique de parcours, il est le starter du “pouvoir d’agir”. En d’autres termes, il est à la base 
+                            d’une démarche d’émancipation. Cette perspective fait de l’outil projet personnalisé un élément moteur et incontournable de nos méthodes d’accompagnement.
+                        </p>
+                   </div>
+              </div>
+         </div>
+    </div>
+</section>
+
+{#Footer blue background#}
+{% include 'semer/footer1.html.twig' %}
+
+{% endblock %}

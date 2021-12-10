@@ -1,0 +1,253 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}SEMER – Service Educatif et Mission d'Encadrement Renforcé{% endblock %}
+{% block description %}SEMER(Service Educatif et Mission d'Encadrement Renforcé) – Une période d'échec est un moment rêvé pour semer les graines du succès.{% endblock %}
+
+{% block body %}
+
+          <!-- First image-->
+          <div id="parallax" style="background-image:url('{{ asset('images/first-image.webp') }}')">
+          </div>
+          <!-- End first image-->
+
+          <!-- Logo over first image-->
+          <section id="hero" class="section">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12">
+                              <div class="herotext text-center">
+                                   <h1 class="hidden">SEMER – Service Educatif et Mission d'Encadrement Renforcé est né de la rencontre et des réflexions d’éducateurs cumulant chacun plus de 10 années d’accompagnement auprès de publics en difficultés. </h1>
+                                   <img src="{{ asset('images/semerlogo.webp') }}" data-wow-duration="1s" data-wow-delay="0.1s" alt="semer logo" style="width: 40%;" class="semer-logo">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>    
+          <!-- End logo over first image-->
+
+          <!-- Project -->
+          <section id="about" class="parallax section white">
+               <div class="wrapsection">
+                    <div class="parallax-overlay"></div>
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-md-12 sol-sm-12">
+                                   <div class="maintitle">
+                                        <h3 class="title-black section-title justtitle">ENONCÉ DU PROJET</h3>
+                                        <p class="lead bottom0 wow bounceInUp">
+                                             Le Service Educatif et Mission d'Encadrement Renforcé est né de la rencontre et des réflexions d’éducateurs cumulant chacun plus de 10 années d’accompagnement auprès de publics en difficultés. 
+                                             Ces professionnels, exerçant dans le champ de la protection de l’enfance, se sont réunis autour d’un projet ayant pour objectif la mise en place d’un accompagnement 
+                                             individualisé pour chaque jeune accueilli...
+                                        </p>
+                                        <p>
+                                             <a href="{{ path('projet') }}" class="btn btn-primary btn-lg wow fadeInLeft" role="button"> Lire plus ... </a> 
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- End project -->
+
+          <!-- Actions-->
+          <section id="about" class="parallax section">
+               <div class="wrapsection">
+                    <div class="parallax-overlay blue"></div>
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-md-12">
+                                   <!-- Title -->
+                                   <div class="maintitle">
+                                        <h3 class="section-title" style="color:black;"><strong>NOS <span class="lighter">CHAMPS</span></strong> D'ACTIONS</h3>
+                                        <br><br>
+                                   </div>
+                              </div>
+                              
+                              <div class="col-md-4 col-sm-6">
+                                   <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.2s">
+                                        <span class="glyphicon glyphicon-home"></span>
+                                        <h3>Accueil d'urgence</h3>
+                                        <p> 
+                                             Nous avons la possibilité d’accueillir des adolescent(e)s en urgence pour des hébergements à courts ou moyens termes.<br><br><br><br>
+                                        </p>
+                                   </div>
+                              </div>
+
+                              <div class="col-md-4 col-sm-6">
+                                   <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
+                                        <span class="glyphicon glyphicon-road"></span>
+                                        <h3>Séjour d'éloignement</h3>
+                                        <p>
+                                             À travers nos séjours, nous travaillons avec les adolescent(e)s les effets positifs de l’éloignement d’avec leur quotidien, 
+                                             nous leur permettons d’apprendre le dépassement de soi, de se revaloriser et de regagner l’estime qu’ils ont d’eux même.
+                                        </p>
+                                   </div>
+                              </div>
+                              
+                              <div class="col-md-4 col-sm-6">
+                                   <div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <h3>Renfort d'équipe</h3>
+                                        <p>
+                                             Nos équipes interviennent pour des remplacements ou en renfort pour les institutions, et leurs équipes.<br><br><br><br>
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- End actions-->
+                    
+          <!-- Quote -->
+          <section class="parallax section white">
+               <div class="wrapsection">
+                    <div class="container blue">
+                         <div class="row">
+                              <div class="col-md-12 sol-sm-12">
+                                   <div class="maintitle">
+                                        <h3 class="section-title justtitle">“Tous ceux qui errent ne sont pas perdus.”</h3>
+                                        <p class="lead bottom0" style="color:white;">
+                                             J.R.R. Tolkien
+                                        </p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- End quote -->
+
+          <!-- Sponsors -->
+          <section  class="parallax section">
+          <div class="wrapsection">
+               <div class="parallax-overlay white"></div>
+               <div class="container">
+                    <div class="row">
+                         <div class="col-md-12 sol-sm-12">
+                              <div class="maintitle">
+                                   <h3 class="section-title" style="color:black;">Nos Partenaires</h3>
+                                   <br><br>
+                              </div>
+                         </div>
+                         
+                         <div class="col-md-4">
+                              <a href="https://www.grainsdefolies.org/accueil.html" target="_blank">
+                                   <img src="{{ asset('images/grainsdefolies.webp') }}" alt="grains de folies logo" class="sponsor">
+                              </a>
+                              <div class="description">
+                                   <a href="https://www.grainsdefolies.org/accueil.html" target="_blank" class="a-black"><b>Grains de Folies</b></a>
+                                        <br>Accompagnateur moyenne montagne<br></span>
+                                   <br>
+                              </div>
+                         </div>
+
+                         <div class="col-md-4">
+                              <a href="http://club.quomodo.com/asahijudo/" target="_blank">
+                                   <img src="{{ asset('images/asai-judo.webp') }}" alt="Asai judo logo" class="sponsor">
+                              </a>
+                              <div class="description">
+                                   <a href="http://club.quomodo.com/asahijudo/" target="_blank" class="a-black"><b>Asai Judo</b></a>
+                                        <br>Club de Judo à Achenheim<br></span>
+                                   <br>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <a href="https://www.facebook.com/drugstore67/" title="facebook webpage" target="_blank">
+                                   <img src="{{ asset('images/drugstore-recordz.webp') }}" alt="Drugstore Recordz logo" class="sponsor">
+                              </a>
+                              <div class="description">
+                                   <a href="https://www.facebook.com/drugstore67/" target="_blank" class="a-black"><b>Drugstore Recordz</b></a>
+                                        <br>Association  culturelle musicale<br></span>
+                                   <br>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <a href="https://2kteamblog.wordpress.com/" title="2k team website" target="_blank">
+                                   <img src="{{ asset('images/2k-team.webp') }}" alt="2k team logo" class="sponsor">
+                              </a>
+                              <div class="description">
+                                   <a href="https://2kteamblog.wordpress.com/" target="_blank" class="a-black"><b>2K TEAM</b></a>
+                                        <br>Club de Lutte, Jujitsu Brésilien et Grappling<br></span>
+                                   <br>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <a href="https://leniddesfees.com" title="Le nid des fees website" target="_blank">
+                                   <img src="{{ asset('images/le-nid.webp') }}" alt="le nid logo" class="sponsor">
+                              </a>
+                              <div class="description">
+                                   <a href="https://leniddesfees.com" target="_blank" class="a-black"><b>Le Nid des Fées</b></a>
+                                        <br>Camps d'initiation à la survie en montagne<br></span>
+                                   <br>
+                              </div>
+                         </div>
+                         <div class="col-md-4">
+                              <a href="https://www.societe.com/societe/bs-systemic-882287071.html" title="Bs systemic" target="_blank">
+                                   <img src="{{ asset('images/bs-systemic.webp') }}" alt="BS systemic logo" class="sponsor">
+                              </a>
+                              <div class="description">
+                                   <a href="https://www.societe.com/societe/bs-systemic-882287071.html" target="_blank" class="a-black"><b>BS Systemic</b></a>
+                                        <br>Coaching et Consulting<br></span>
+                                   <br>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          </section>
+          <!-- End Sponsors -->
+                    
+          <!-- Contact formulaire-->
+          <section id="contactarea" class="parallax section" >
+          <div class="wrapsection">
+               <div class="parallax-overlay blue"></div>
+               <div class="container" >
+                    <div class="row">
+                         <div class="col-md-12">
+                              <div class="maintitle">
+                                   <h3 class="section-title">Contactez-nous</h3>
+                                   <p class="lead1">
+                                        2 impasse du vieux Rhin, 67114 Eschau <br>accueil@serviceeducatif.com | 06 37 93 30 18
+                                        <br><br>
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="col-md-12 col-sm-12">  
+                              <!-- CONTACT FORM  -->   
+                              <div class="dzFormMsg"></div>
+                              <form id="contact-form" method="post" class="dzForm" action="{{ path('contact') }}">
+                                   <input type="hidden" value="Contact" name="whichform" >
+                                   <div class="col-md-4 col-sm-4">
+                                        <input type="text" required class="form-control" name="fullname" id="fullname" placeholder="Nom et prénom">
+                                   </div>
+                                   <div class="col-md-4 col-sm-4">
+                                        <input type="text" required class="form-control" name="phone" id="phone" placeholder="Téléphone">
+                                   </div>
+                                   <div class="col-md-4 col-sm-4">
+                                        <input type="email" required class="form-control" name="email" id="email" placeholder="Email">
+                                   </div>
+                                   <br><br>
+                                   <div class="col-md-12 col-sm-12">
+                                        <textarea required class="form-control" rows="5" name="message" id="message" placeholder="Message"></textarea>
+                                   </div>
+                                   <br><br>
+
+                                   <div class="col-md-offset-9 col-md-3 col-sm-offset-3 col-sm-6">
+                                        <br>
+                                        <button id="submit" type="submit" class="form-control" name="submit">ENVOYER</button>
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          </section>
+
+          {#Footer white background#}
+          {% include 'semer/footer.html.twig' %}
+
+
+{% endblock %}
+

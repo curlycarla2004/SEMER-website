@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le Projet | Service Educatif et Mission d'Encadrement Renforcé{% endblock %}
+{% block description %}Le Service Educatif et Mission d'Encadrement Renforcé  est né de la rencontre et des réflexions d’éducateurs cumulant chacun plus de 10 années d’accompagnement auprès 
+de publics en difficultés. {% endblock %}
+
+{% block body %}
+<!-- Projet background image-->
+<div id="parallax1" style="background-image:url('{{ asset('images/projet.webp') }}')">
+</div>
+
+<!-- Projet Title-->
+ <section id="hero" class="section">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12">
+                   <div class="herotext text-center">
+                        <h1><b>LE PROJET</b></h1>
+                   </div>
+              </div>
+              
+         </div>
+    </div>
+</section>    
+
+<section class="white">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12 sol-sm-12">
+                   <div class="maintitle">
+                        <p class="lead ">
+                            Le <b>Service Educatif et Mission d'Encadrement Renforcé</b> est né de la rencontre et des réflexions d’éducateurs cumulant chacun plus de 10 années d’accompagnement auprès 
+                            de publics en difficultés. Ces professionnels, exerçant dans le champ de la protection de l’enfance, se sont réunis autour d’un projet ayant pour objectif la mise en place d’un accompagnement 
+                            individualisé pour chaque jeune accueilli.
+                            <br><br>
+                             
+                            C’est <b>porté par l’envie d’offrir</b> à ces adolescent(e)s d’autres champs « des possibles », qu’a germé l’envie de créer une structure pouvant accueillir et accompagner 
+                            des jeunes en difficultés jusqu’à la concrétisation d’un projet correspondant à leur profil.
+                            <br><br>
+                            <b>L’objectif</b> est de permettre à ces mineurs en grande difficulté ou en voie de marginalisation, de pouvoir s’envisager différemment, de s’immerger et ainsi de s’imprégner 
+                            de choses nouvelles afin d’acquérir des compétences nouvelles mobilisables dans leur quotidien. 
+                            <br><br>
+                            De par nos différentes formes d’accompagnements, nous pensons pouvoir opérer auprès de ces jeunes, une déconnexion de leur zone de confort, et ainsi les aider 
+                            à cheminer vers l’élaboration de pensées nouvelles leur permettant de mettre des mots sur leurs maux.
+                        </p>
+                   </div>
+              </div>
+         </div>
+    </div>
+</section>
+
+{#Footer blue background#}
+{% include 'semer/footer1.html.twig' %}
+
+{% endblock %}

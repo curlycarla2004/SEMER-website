@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bénéficiaires | Service Educatif {% endblock %}
+{% block description %} Les jeunes accueillis à SEMER sont tous victimes de problématique familiale : ils sont issus de foyers familiaux extrêmement précaires 
+offrant peu de repères positifs. {% endblock %}
+
+{% block body %}
+<!-- Beneficiaire background image-->
+<div id="parallax1" style="background-image:url('{{ asset('images/beneficiaire.webp') }}')">
+</div>
+
+<!-- Beneficiaire Title-->
+ <section id="hero" class="section">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12">
+                   <div class="herotext text-center">
+                        <h1 class="title-section"><b>PROFIL DES BÉNÉFICIAIRES DE L'ACTION</b></h1>
+                   </div>
+              </div>
+              
+         </div>
+    </div>
+</section>  
+
+
+<section class="parallax section white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sol-sm-6">
+                <div class="maintitle">
+                    <h4 class="title-black">A. JEUNE EN DIFFICULTÉ</h4><br>
+                    <p class="lead ">
+                        Les bénéficiaires de nos actions sont principalement des jeunes adolescent(e)s ayant épuisé toutes 
+                        les ressources de l’Aide Sociale à l’Enfance. Ces adolescents se positionnent en marge de la société.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 sol-sm-6" class="beneficiaire-alignment">
+                <img src="{{ asset('images/beneficiaire1.webp') }}" alt="kayak image" class="beneficiaire-images" >  
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+</section>
+
+<section class="parallax section white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sol-sm-6" class="beneficiaire-alignment">
+                <br><br>
+                <img src="{{ asset('images/beneficiaire2.webp') }}" alt="kayak image" class="beneficiaire-images" >  
+            </div>
+            <div class="col-md-6 sol-sm-6">
+                <div class="maintitle">
+                    <h4 class="title-black">B. LA SCOLARITÉ</h4><br>
+                    <p class="lead ">
+                        La plupart de nos bénéficiaires ont un parcours scolaire semé d’échecs et stigmatisant. 
+                        On constate chez eux de grandes carences sur les savoirs de base. 
+                        Beaucoup ont décroché du système scolaire dès l’école primaire. 
+                        Ils présentent de grandes difficultés d’apprentissage ainsi que des troubles à l’oral comme à l’écrit. 
+                        Ces difficultés les impactent directement en termes de confiance et d’estime de soi. 
+                        Elles expliquent en partie le décrochage, la défiance vis-à-vis du système et l’exclusion scolaire.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="parallax section white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sol-sm-6">
+                <div class="maintitle">
+                    <h4 class="title-black">C. LA FAMILLE</h4><br>
+                    <p class="lead ">
+                        Les jeunes accueillis au SEMER sont tous victimes de problématique familiale : ils sont issus de foyers familiaux extrêmement précaires 
+                        offrant peu de repères positifs. Ils grandissent dans des foyers où la précarité financière et culturelle se manifeste fréquemment sous 
+                        formes de violence et de maltraitance contre eux même et envers les autres.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 sol-sm-6" class="beneficiaire-alignment">
+                <br><br>
+                    <img src="{{ asset('images/beneficiaire3.webp') }}" alt="kayak image" class="beneficiaire-images" >  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{#Footer blue background#}
+{% include 'semer/footer1.html.twig' %}
+
+{% endblock %}

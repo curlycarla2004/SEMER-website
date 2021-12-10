@@ -1,0 +1,215 @@
+.btn-primary:hover, .btn-primary:focus {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+#parallax1 {
+	height:50%;
+	width:100%;
+	top:0;
+	position:fixed;
+	background-position:center center;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: -100;
+}
+
+.parallax1.section .container{
+	position: relative;
+	z-index: 4;
+}
+
+.parallax1 {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+	z-index: 1;	
+	color:#fff;
+}
+.parallax1-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+
+
+
+.parallax.lead1{
+	color:black;
+}
+
+
+
+
+.parallax2.section .container{
+	position: relative;
+	z-index: 4;
+}
+.parallax2 {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+	z-index: 1;	
+	padding-top: 35px;
+	padding-bottom:35px;
+}
+.parallax2-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.dropdown-menu {
+	padding: 5px 10px !important;
+}
+
+
+.container.container-alignment{
+	text-align: center; 
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+.beneficiaire-alignment{
+	text-align: center; 
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+/* -----Background colors of sections -----*/
+.parallax.section.white{
+	background-color: white;
+}
+
+.white{
+	background-color: white;
+}
+
+.parallax-overlay.blue{
+	background-color: #92bcd1;
+}
+.parallax-overlay.white{
+	background-color: white;
+}
+.container.blue{
+	background-color: #92bcd1;
+}
+.lead.white{
+	color: white;
+}
+
+/* -----End background colors of sections or text-----*/
+
+/* Hide H1 on homepage */
+.h1.hidden{
+	font-size: 0;
+	width: 1px;
+	height: 1px;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute!important;
+	border: 0!important;
+	padding: 0!important;
+	margin: 0!important;
+	clip: rect(1px,1px,1px,1px);
+}
+
+/* Sponsors */
+.sponsor{
+	width:350px; 
+	height: 250px;
+}
+.a-black{
+	color:black !important;
+}
+/* End sponsors */
+
+
+/* -----RESPONSIVITE SUR LES MOBILES / AUTRES DEVICES -----*/
+
+@media only screen 
+and (min-device-width: 300px) 
+and (max-device-width: 767px) {
+  .navbar-brand{
+    float: none !important;
+  	}
+
+  .navbar-inverse .navbar-toggle {
+    background-color: white !important;
+    border-color: white !important;
+  	}
+  .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #3a9ccf !important;
+	}
+	.semer-logo {
+		width: 100% !important;
+	}
+    .title-section{
+		font-size: 3rem !important;
+	}
+	.responsive-images{
+		width: 100%;
+	}
+	.beneficiaire-images{
+		width: 100%;
+	}
+	#footer {
+		padding:10px 0;
+		text-transform:uppercase;
+		font-size:9px;
+		line-height: 1.6;
+	}
+
+	p.lead1 {
+		font-size:14px;
+		font-weight:200;
+		color: black;
+		padding-top: 20px;
+	}
+	
+   
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 992px) {
+   .navbar-brand{
+       float: left !important;
+   }
+
+   .semer-logo {
+    width: 45% !important;
+	}
+	.responsive-images{
+		width: 50%;
+	}
+	.beneficiaire-images{
+		width: 80%;
+	}
+	#footer {
+		padding:20px 0;
+		text-transform:uppercase;
+		font-size:13px;
+		line-height: 1.6;
+	}
+
+	p.lead1 {
+		font-size:18px;
+		font-weight:200;
+		color: black;
+		padding-top: 20px;
+	}
+	
+    
+}

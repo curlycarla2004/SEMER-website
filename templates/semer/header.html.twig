@@ -1,0 +1,50 @@
+          <!-- Start Header -->
+          <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+               <div class="container">
+                    <div class="navbar-header">
+                         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         </button>
+                         <!-- Semer Logo -->
+                         <a href="{{ path('home') }}" class="navbar-brand"><img src="{{ asset('images/semerlogoheader.webp') }}" alt="semer logo" style="width: 12%;"></a>
+                    </div>
+                    
+                    <!-- Start Navigation -->
+                    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                         <ul class="nav navbar-nav">
+                              <li>
+                              <a href="{{ path('home') }}">Accueil</a>
+                              </li>
+
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle" href="{{ path('projet') }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Le projet
+                                   </a>
+                                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="{{ path('projet') }}">Le Projet</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="{{ path('presentation') }}">Présentation</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="{{ path('beneficiaire') }}">Bénéficiaire</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="{{ path('activites') }}">Nos Activités</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="{{ path('outils') }}">Nos Outils</a>
+                                   </div>
+                              </li>
+                    
+                              <li>
+                              <a href="{{ path('objectifs') }}">Nos Objectifs</a>
+                              </li>
+
+                              <li>
+                              <a href="{{ path('contact') }}#contactarea">Contact</a>
+                              </li>
+                         </ul>
+                    </nav>
+               </div>
+          </header>
+
